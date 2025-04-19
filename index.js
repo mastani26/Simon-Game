@@ -8,13 +8,16 @@ var count=0;
 var started = false;
 var acceptingInput = false;
 
-$(document).keydown(function () {
+function startGame() {
     if (!started && !acceptingInput) {
         $(".level").text("Level " + count);
         nextsequence();
         started = true;
     }
-});
+}
+
+$(document).on("keydown", startGame);      
+$(document).on("touchstart", startGame);  
 
 
 $(".btn").click(function () {
