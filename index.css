@@ -51,23 +51,23 @@ h1{
 
 @media (max-width: 600px) {
     body {
-    background-color: lightblue;
-  }
+        background-color: lightblue;
+    }
+
     .container {
         max-width: 90vw;
-        gap: 15px;
+        gap: 10px; 
         margin-top: 80px;
     }
 
     .btn {
-        width: 40vw;
-        height: 40vw;
-        max-width: 120px;
-        max-height: 120px;
+        width: 35vw;   
+        height: 35vw;  
+        max-width: 120px;  
+        max-height: 120px; 
     }
 
     h1 {
         font-size: 2rem;
     }
 }
-
