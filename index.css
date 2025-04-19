@@ -48,9 +48,26 @@ h1{
 .gameover {
     background-color: red;
 }
-@media (max-width: 768px) {
-  body {
+
+@media (max-width: 600px) {
+    body {
     background-color: lightblue;
   }
+    .container {
+        max-width: 90vw;
+        gap: 15px;
+        margin-top: 80px;
+    }
+
+    .btn {
+        width: 40vw;
+        height: 40vw;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
 }
 
