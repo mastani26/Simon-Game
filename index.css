@@ -55,19 +55,26 @@ h1{
     }
 
     .container {
-        max-width: 90vw;
-        gap: 10px; 
-        margin-top: 80px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;  
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin-top: 50px;
     }
 
     .btn {
-        width: 35vw;   
-        height: 35vw;  
-        max-width: 120px;  
-        max-height: 120px; 
+        width: 40vw;    
+        height: 40vw;   
+        max-width: 140px;   
+        max-height: 140px;  
     }
 
     h1 {
         font-size: 2rem;
+        margin-top: 20px;
     }
 }
+
