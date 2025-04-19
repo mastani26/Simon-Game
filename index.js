@@ -1,30 +1,20 @@
+
 var buttonColours = ["red", "green", "yellow","blue"];
+
+
 var gamepattern = [];
 var userclickpattern = [];
 var count=0;
 var started = false;
 var acceptingInput = false;
 
-$(document).ready(function () {
-
-    $(document).on("keydown", function () {
-        if (!started && !acceptingInput) {
-            $(".level").text("Level " + count);
-            nextsequence();
-            started = true;
-        }
-    });
-
-  
-    $(document).on("touchstart", function () {
-        if (!started && !acceptingInput) {
-            $(".level").text("Level " + count);
-            nextsequence();
-            started = true;
-        }
-    });
+$(document).keydown(function () {
+    if (!started && !acceptingInput) {
+        $(".level").text("Level " + count);
+        nextsequence();
+        started = true;
+    }
 });
-
 
 
 $(".btn").click(function () {
